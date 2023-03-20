@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  chatgpt-telegram-bot:
+    container_name: chatgpt-telegram-bot
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
